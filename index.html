@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8 />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="contact-form">
+            <p class="title">恋愛占い</p>
+
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="fc81268b-8372-4b57-9e8e-aa3e29cdf924"> <!-- Required -->
+                <div class="item">
+                    <label class="label">あなたの名前</label>
+                    <input type="text" class="inputs" name="name" required />
+                    <label class="label">生年月日</label>
+                    <select class="inputs" name="month">
+                        <option value="jan">1月</option>
+                        <option value="feb">2月</option>
+                        <option value="mar">3月</option>
+                        <option value="apr">4月</option>
+                        <option value="may">5月</option>
+                        <option value="jun">6月</option>
+                        <option value="jul">7月</option>
+                        <option value="aug">8月</option>
+                        <option value="sep">9月</option>
+                        <option value="oct">10月</option>
+                        <option value="nov">11月</option>
+                        <option value="dec">12月</option>
+                        </select>
+
+                </div>
+
+                <div class="item">
+                    <p class="label">デートするなら？</p>
+                    <div class="inputs">
+                        <input type="radio" name="menu" id="s" value="s" /><label for="s">海</label>
+                        <input type="radio" name="menu" id="a" value="a" /><label for="a">山</label>
+                        <input type="radio" name="menu" id="b" value="b" /><label for="b">家</label>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <label class="label">相手の名前</label>
+                    <input type="text" name="$aitenosukinahito" required />
+                </div>
+
+                <div class="item">
+                    <label class="label">どんなところが好き？</label>
+                    <textarea class="inputs" name="message" placeholder="書いてみてね！"></textarea>
+                    <label class="label">自分の星座</label>
+                    <select class="inputs" name="month">
+                            <option value="jan">おひつじ座</option>
+                            <option value="feb">おうし座</option>
+                            <option value="mar">ふたご座</option>
+                            <option value="apr">かに座</option>
+                            <option value="may">しし座</option>
+                            <option value="jun">おとめ座</option>
+                            <option value="jul">てんびん座</option>
+                            <option value="aug">さそり座</option>
+                            <option value="sep">いて座</option>
+                            <option value="oct">やぎ座</option>
+                            <option value="nov">1みずがめ座</option>
+                            <option value="dec">うお座</option>
+                            </select>
+                </div>
+
+                <div class="button-area">
+                    <input type="submit" value="診断" onclick="window.open('saki.html')" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
